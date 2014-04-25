@@ -1,0 +1,78 @@
+1:07:43:690 [ProcessingContext] Using processing tool JAVAC
+1:07:43:691 [ProcessingContext] Using processing javac ProcessingEnvironment version %W% %E%
+1:07:43:691 [ProcessingContext] Using source path null
+1:07:43:691 [MainProcessor] Using processing env juzu.impl.compiler.ProcessingContext
+1:07:43:696 [MainProcessor] Created new meta model
+1:07:43:715 [ProcessingContext] Loading services implementation of juzu.impl.plugin.module.metamodel.ModuleMetaModelPlugin
+1:07:43:755 [ProcessingContext] Using plugins: application less
+1:07:43:755 [ProcessingContext] Loading services implementation of juzu.impl.plugin.application.metamodel.ApplicationMetaModelPlugin
+1:07:43:843 [ProcessingContext] Using plugins: plf4-ajax controller template ajax asset binding router portlet
+1:07:43:843 [ProcessingContext] Plugin plf4-ajax supports [org.exoplatform.commons.juzu.ajax.Ajax]
+1:07:43:843 [ProcessingContext] Plugin controller supports [juzu.Consumes, juzu.View, juzu.Action, juzu.Resource]
+1:07:43:844 [ProcessingContext] Plugin template supports [juzu.Path]
+1:07:43:844 [ProcessingContext] Plugin ajax supports [juzu.plugin.ajax.Ajax]
+1:07:43:844 [ProcessingContext] Plugin asset supports [juzu.plugin.asset.Assets]
+1:07:43:844 [ProcessingContext] Plugin binding supports [juzu.plugin.binding.Bindings]
+1:07:43:845 [ProcessingContext] Plugin router supports [juzu.Route]
+1:07:43:845 [ProcessingContext] Plugin portlet supports [juzu.plugin.portlet.Portlet]
+1:07:43:845 [ProcessingContext] Plugin application supports [juzu.Consumes, juzu.Application, juzu.plugin.binding.Bindings, juzu.plugin.portlet.Portlet, juzu.plugin.ajax.Ajax, org.exoplatform.commons.juzu.ajax.Ajax, juzu.View, juzu.plugin.asset.Assets, juzu.Route, juzu.Action, juzu.Resource, juzu.Path]
+1:07:43:845 [ProcessingContext] Plugin less supports [juzu.plugin.less.Less]
+1:07:43:845 [MainProcessor] Starting APT round #0
+1:07:43:845 [MainProcessor] Activating model
+1:07:43:846 [ProcessingContext] Loading services implementation of juzu.impl.template.spi.TemplateProvider
+1:07:43:851 [MainProcessor] Processing elements for annotation for juzu.plugin.asset.Assets
+1:07:43:865 [MainProcessor] Processing element org.exoplatform.portlet.customer
+1:07:43:881 [MainProcessor] Processing elements for annotation for juzu.Application
+1:07:43:881 [MainProcessor] Processing element org.exoplatform.portlet.customer
+1:07:43:881 [MainProcessor] Processing elements for annotation for juzu.plugin.portlet.Portlet
+1:07:43:881 [MainProcessor] Processing element org.exoplatform.portlet.customer
+1:07:43:882 [MainProcessor] Processing elements for annotation for juzu.Path
+1:07:43:882 [MainProcessor] Processing element index
+1:07:43:882 [MainProcessor] Processing elements for annotation for juzu.View
+1:07:43:882 [MainProcessor] Processing element index(juzu.request.RenderContext)
+1:07:43:882 [MainProcessor] Process annotations
+1:07:43:900 [ProcessingContext] Adding template ref org.exoplatform.portlet.customer.CustomerApplication#index Path[index.gtmpl]
+1:07:43:906 [MainProcessor] Post processing model
+1:07:43:906 [MainProcessor] Process events
+1:07:43:906 [ProcessingContext] Creating source file for name=org.exoplatform.portlet.customer.Application elements=[org.exoplatform.portlet.customer]
+1:07:43:907 [ProcessingContext] Generated application org.exoplatform.portlet.customer.Application as /Users/apple/java/eXoProjects/customer-extension/customer-extension-webapp/target/generated-sources/annotations/org/exoplatform/portlet/customer/Application.java
+1:07:43:908 [MainProcessor] Post process events
+1:07:43:908 [ProcessingContext] Creating source file for name=org.exoplatform.portlet.customer.CustomerApplication_ elements=[org.exoplatform.portlet.customer.CustomerApplication]
+1:07:43:912 [ProcessingContext] Generated controller companion org.exoplatform.portlet.customer.CustomerApplication_ as /Users/apple/java/eXoProjects/customer-extension/customer-extension-webapp/target/generated-sources/annotations/org/exoplatform/portlet/customer/CustomerApplication_.java
+1:07:43:912 [ProcessingContext] Processing templates of ElementHandle.Package[qn=org.exoplatform.portlet.customer]
+1:07:43:912 [TemplateResolver] Synchronizing existing templates []
+1:07:43:912 [TemplateResolver] Building missing templates
+1:07:43:912 [TemplateResolver] Compiling template Path[index.gtmpl]
+1:07:43:929 [ProcessingContext] Trying to find a native file system for package org.exoplatform.portlet.customer
+1:07:43:929 [ProcessingContext] Found package org.exoplatform.portlet.customer annotations @juzu.Application(defaultController=org.exoplatform.portlet.customer.CustomerApplication.class),@juzu.plugin.portlet.Portlet(name="CustomerPortlet"),@juzu.plugin.asset.Assets(location=juzu.asset.AssetLocation.SERVER, scripts={@juzu.plugin.asset.Script(src="js/jquery-1.8.3.min.js", id="jquery"), @juzu.plugin.asset.Script(src="js/snack-min.js", id="snack"), @juzu.plugin.asset.Script(src="js/jquery-juzu-utils-0.1.0.js", depends={"jquery"}, id="juzu-utils"), @juzu.plugin.asset.Script(src="js/notif.js", id="notif", depends={"jquery", "snack", "juzu-utils"})}, stylesheets={@juzu.plugin.asset.Stylesheet(src="css/style.css")}) will use first one
+1:07:43:957 [ProcessingContext] Resolved uri /Users/apple/java/eXoProjects/customer-extension/customer-extension-webapp/src/main/java/org/exoplatform/portlet/customer/package-info.java for package org.exoplatform.portlet.customer
+1:07:43:973 [ProcessingContext] Attempt to resolve FileKey[packageName=org.exoplatform.portlet.customer.templates,rawName=index,ext=gtmpl] from source path
+1:07:43:974 [ProcessingContext] Resolved FileKey[packageName=org.exoplatform.portlet.customer.templates,rawName=index,ext=gtmpl] to /Users/apple/java/eXoProjects/customer-extension/customer-extension-webapp/src/main/java/org/exoplatform/portlet/customer/templates/index.gtmpl
+1:07:44:030 [ProcessingContext] Creating source file for name=org.exoplatform.portlet.customer.templates.index elements=[org.exoplatform.portlet.customer.CustomerApplication]
+1:07:44:035 [TemplateResolver] Generated template class Path[index.gtmpl] as /Users/apple/java/eXoProjects/customer-extension/customer-extension-webapp/target/generated-sources/annotations/org/exoplatform/portlet/customer/templates/index.java with originating elements [org.exoplatform.portlet.customer.CustomerApplication]
+1:07:44:041 [TemplateResolver] Generated template script Path[index_.groovy] as /Users/apple/java/eXoProjects/customer-extension/customer-extension-webapp/target/classes/org/exoplatform/portlet/customer/templates/index_.groovy with originating elements [org.exoplatform.portlet.customer.CustomerApplication]
+1:07:44:041 [ProcessingContext] Creating source file for name=org.exoplatform.portlet.customer.CustomerPortlet elements=[org.exoplatform.portlet.customer]
+1:07:44:085 [MainProcessor] Ending APT round #0
+1:07:44:217 [MainProcessor] Starting APT round #1
+1:07:44:217 [MainProcessor] Processing elements for annotation for juzu.Path
+1:07:44:231 [MainProcessor] Process annotations
+1:07:44:231 [MainProcessor] Post processing model
+1:07:44:231 [MainProcessor] Process events
+1:07:44:231 [MainProcessor] Post process events
+1:07:44:231 [ProcessingContext] Processing templates of ElementHandle.Package[qn=org.exoplatform.portlet.customer]
+1:07:44:231 [TemplateResolver] Synchronizing existing templates [Path[index.gtmpl]]
+1:07:44:231 [ProcessingContext] Found cached source path disk[/Users/apple/java/eXoProjects/customer-extension/customer-extension-webapp/src/main/java] for package org.exoplatform.portlet.customer
+1:07:44:231 [ProcessingContext] Attempt to resolve FileKey[packageName=org.exoplatform.portlet.customer.templates,rawName=index,ext=gtmpl] from source path
+1:07:44:231 [ProcessingContext] Resolved FileKey[packageName=org.exoplatform.portlet.customer.templates,rawName=index,ext=gtmpl] to /Users/apple/java/eXoProjects/customer-extension/customer-extension-webapp/src/main/java/org/exoplatform/portlet/customer/templates/index.gtmpl
+1:07:44:232 [TemplateResolver] Template Path[index.gtmpl] is valid
+1:07:44:232 [TemplateResolver] Building missing templates
+1:07:44:232 [TemplateResolver] Template class Path[index.gtmpl] was found in cache
+1:07:44:232 [TemplateResolver] Template Path[index.gtmpl] was found in cache
+1:07:44:232 [MainProcessor] Ending APT round #1
+1:07:44:232 [MainProcessor] APT processing over
+1:07:44:232 [MainProcessor] Passivating model
+1:07:44:232 [ProcessingContext] Emitting module config
+1:07:44:235 [ProcessingContext] Passivating template resolver for ElementHandle.Package[qn=org.exoplatform.portlet.customer]
+1:07:44:235 [TemplateResolver] Evicting cache [Path[index.gtmpl]]
+1:07:44:235 [ProcessingContext] Passivating templates
+1:07:44:235 [ProcessingContext] Emitting application ElementHandle.Package[qn=org.exoplatform.portlet.customer] config
