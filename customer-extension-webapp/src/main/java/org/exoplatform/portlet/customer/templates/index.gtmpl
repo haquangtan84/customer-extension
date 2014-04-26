@@ -1,1 +1,25 @@
-QUAN KY KHACH HANG
+
+<%
+  import org.apache.commons.lang.StringUtils;  
+%>
+
+<div id="customerPortlet" class="uiCustomerPortlet" >
+   
+   
+   <div id="customer-alert" style="left: 50%; position: absolute; top: 42px; display:none;" class="alert alert-success customerAlertSuccess">
+   </div>
+   
+
+   
+  
+   <h3 >&{exoplatform.customer.administration.title}</h3> 
+ 
+  
+
+	<form id="Form" enctype="multipart/form-data" action="" method="POST" class="form-horizontal">
+			  
+	</form>
+
+</div>
+
+
