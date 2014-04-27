@@ -4,20 +4,32 @@
 %>
 
 <div id="customerPortlet" class="uiCustomerPortlet" >
-   
-   
    <div id="customer-alert" style="left: 50%; position: absolute; top: 42px; display:none;" class="alert alert-success customerAlertSuccess">
-   </div>
-   
-
-   
+   </div>  
   
-   <h3 >&{exoplatform.customer.administration.title}</h3> 
- 
-  
-
-	<form id="Form" enctype="multipart/form-data" action="" method="POST" class="form-horizontal">
-			  
+   	<h3>&{exoplatform.customer.administration.title}</h3> 
+   
+	<form id="customerForm" enctype="multipart/form-data" action="@{CustomerApplication.save()}" method="POST" class="form-horizontal">
+		<div class="row">
+		
+			<div class="control-group" style="margin-left: 20px;">
+			    <label class="control-label" for="customerName">&{exoplatform.customer.customerName}: </label>
+			    <div class="controls" >
+			      <input class="span3" label="&{exoplatform.customer.customerName}" type="text" id="customerName" name="customerName">
+			    </div>
+			</div>
+			
+			<div class="control-group" style="margin-left: 20px;">
+			    <label class="control-label" for="customerAddress">&{exoplatform.customer.customerAddress}: </label>
+			    <div class="controls" >
+			      <input class="span3" label="&{exoplatform.customer.customerAddress}" type="text" id="customerAddress" name="customerAddress">
+			    </div>
+			</div>
+			
+		</div>	  
+		<div class="uiAction">				
+    		<button type="" id="btnCustomerSave" class="btn">&{exoplatform.videocall.action.save}</button>
+	  </div>
 	</form>
 
 </div>

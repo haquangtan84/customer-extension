@@ -4,16 +4,16 @@
    xmlns:jcr="http://www.jcp.org/jcr/1.0" 
    xmlns:exo="http://www.exoplatform.com/jcr/exo/1.0">  
 
-  <nodeType name="elcom:Customer" isMixin="false" hasOrderableChildNodes="false" primaryItemName="">
+  <nodeType name="exo:Customer" isMixin="false" hasOrderableChildNodes="false" primaryItemName="">
     <supertypes>
       <supertype>nt:base</supertype>
     </supertypes>    
     <propertyDefinitions>     
-      <propertyDefinition name="elcom:customerName" requiredType="String" autoCreated="false" mandatory="true"
+      <propertyDefinition name="exo:customerName" requiredType="String" autoCreated="false" mandatory="true"
         onParentVersion="COPY" protected="false" multiple="false">
         <valueConstraints/>
       </propertyDefinition>     
-      <propertyDefinition name="elcom:custerAddress" requiredType="String" autoCreated="false" mandatory="true"
+      <propertyDefinition name="exo:customerAddress" requiredType="String" autoCreated="false" mandatory="true"
         onParentVersion="COPY" protected="false" multiple="false">
         <valueConstraints/>
       </propertyDefinition>      

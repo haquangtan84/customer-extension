@@ -1,31 +1,31 @@
-[class^="uiIconWeemo"], .btn.disabled:hover  [class^="uiIconWeemo"] {
-  background-image: url('/weemo-extension/img/uiIconWeemoDarkGray.png');
+[class^="uiIconCustomer"], .btn.disabled:hover  [class^="uiIconCustomer"] {
+  background-image: url('/customer-extension/img/uiIconCustomerDarkGray.png');
 }
 
-.nav-pills > .active > a > [class^="uiIconWeemo"],
-.nav-list > .active > a > [class^="uiIconWeemo"],
-.navbar-inverse .nav > .active > a > [class^="uiIconWeemo"],
-.btn:hover [class^="uiIconWeemo"], a:hover [class^="uiIconWeemo"],
-.actionIcon.active [class^="uiIconWeemo"],.nodeSelected:hover [class^="uiIconWeemo"],
-[class^="uiIconWeemo"]:hover, .uiActionBar [class^="uiIconWeemo"]:hover, .uiIconWeemoBlue
+.nav-pills > .active > a > [class^="uiIconCustomer"],
+.nav-list > .active > a > [class^="uiIconCustomer"],
+.navbar-inverse .nav > .active > a > [class^="uiIconCustomer"],
+.btn:hover [class^="uiIconCustomer"], a:hover [class^="uiIconCustomer"],
+.actionIcon.active [class^="uiIconCustomer"],.nodeSelected:hover [class^="uiIconCustomer"],
+[class^="uiIconCustomer"]:hover, .uiActionBar [class^="uiIconCustomer"]:hover, .uiIconCustomerBlue
  {
-  background-image: url('../img/uiIconWeemoBlue.png');
+  background-image: url('../img/uiIconCustomerBlue.png');
 }
 
-.uiIconWeemoLightGray {
-  background-image: url('/weemo-extension/img/uiIconWeemoLightGray.png');
+.uiIconCustomerLightGray {
+  background-image: url('/customer-extension/img/uiIconCustomerLightGray.png');
 }
 
-.uiIconWeemoWhite
+.uiIconCustomerWhite
  {
-  background-image: url('/weemo-extension/img/uiIconWeemoWhite.png');
+  background-image: url('/customer-extension/img/uiIconCustomerWhite.png');
 }
 
-.uiIconWeemoVideoCalls {
+.uiIconCustomerVideoCalls {
   background-position: 0px 0px;
 }
 
-.uiVideoCallAdminPortlet .PemissionInputset{
+.uiCustomerPortlet .PemissionInputset{
 	margin-right:4px;
 }
 
@@ -34,7 +34,7 @@ button.close{
 	background-position: -160px -100px;
 }
 
-.weemo-alert{
+.customer-alert{
 	 position: absolute; 
 	 top: 32px; 
 	 width: 100%; 
@@ -47,52 +47,49 @@ button.close{
 	 border-radius: 0px;
 }
 
-.uiVideoCallAdminPortlet{
+.uiCustomerPortlet{
 	padding: 32px;
 }
 
-.uiVideoCallAdminPortlet h3{
+.uiCustomerPortlet h3{
 	text-align: left;
     text-shadow: 0 3px 4px #fff;
     margin:-7px 0 0px; 
 	color: #2F5E92;
 }
 
-.uiVideoCallAdminPortlet h4{
+.uiCustomerPortlet h4{
     margin:14px 0; 
 }
 
-.uiVideoCallAdminPortlet .row .span5 p{
+.uiCustomerPortlet .row .span5 p{
     padding: 6px 0 0 0;
 }
 
-.uiVideoCallAdminPortlet .control-group .uiCheckbox{
+.uiCustomerPortlet .control-group .uiCheckbox{
 	margin: 0px;
 }
 
-.uiVideoCallAdminPortlet .weemoKey .control-label{
+.uiCustomerPortlet .CustomerKey .control-label{
 	text-align: left;
     width: auto;
 	text-align: right;
 }
-.uiVideoCallAdminPortlet .control-group.weemoKey{
+.uiCustomerPortlet .control-group.CustomerKey{
 	margin-bottom: 8px;
 }
 
-.uiVideoCallAdminPortlet .weemoKey .controls{
+.uiCustomerPortlet .CustomerKey .controls{
 	margin-left: 85px;
 }
 
-.uiVideoCallAdminPortlet .weemoKey .controls{
+.uiCustomerPortlet .CustomerKey .controls{
 	margin-left: 85px;
 }
 
-.uiVideoCallAdminPortlet .actionTestWeemo{
-	text-align: center;
-	margin-bottom: 28px;
-}
 
-.uiVideoCallIconWarning {
+
+.uiCustomerIconWarning {
     background: url("/eXoResources/skin/images/Icons/uiIconColor.png") no-repeat scroll -20px top rgba(0, 0, 0, 0);
     width: 16px;
 	vertical-align: text-top;
@@ -115,7 +112,7 @@ button.close{
 	margin-top: 5px;
 }
 
-.confirmationVideoCallIcon {
+.confirmationCustomerIcon {
   	background: url(/eXoResources/skin/images/PopupMessage/icons.png) no-repeat;
 	padding-left: 20px;
 	line-height: 16px;

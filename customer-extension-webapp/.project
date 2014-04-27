@@ -2,7 +2,9 @@
 <projectDescription>
   <name>customer-extension-webapp</name>
   <comment>Manage Customer Extension Webapp. NO_M2ECLIPSE_SUPPORT: Project files created with the maven-eclipse-plugin are not supported in M2Eclipse.</comment>
-  <projects/>
+  <projects>
+    <project>customer-extension-services</project>
+  </projects>
   <buildSpec>
     <buildCommand>
       <name>org.eclipse.jdt.core.javabuilder</name>
