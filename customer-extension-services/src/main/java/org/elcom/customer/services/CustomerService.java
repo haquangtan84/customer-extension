@@ -24,12 +24,12 @@ public class CustomerService {
 	
 	 private static ExoCache<Serializable, CustomerModel> customerCache;
 	 public static String CUSTOMER_PROFILE_KEY = "videoCallsProfile" + CommonsUtils.getRepository().getConfiguration().getName();
-	 public static String BASE_PATH = "exo:applications";
-	 public static String CUSTOMER_BASE_PATH = "CustomerManagement";
+	 public static String BASE_PATH = "Application Data";
+	 public static String CUSTOMER_BASE_PATH = "Customer Data";
 	 public static String CUSTOMER_NODETYPE = "exo:Customer";
 	 public static String CUSTOMER_NAME_PROP = "exo:customerName";
 	 public static String CUSTOMER_ADDRESS_PROP = "exo:customerAddress";
-	 public static final String NT_BASE = "nt:base";
+	 public static final String NT_UNSTRUCTURED = "nt:unstructured";
 
 	 
 	 /**
@@ -45,7 +45,7 @@ public class CustomerService {
 	    SessionProvider sessionProvider = null;
 	    try {
 	      
-	      sessionProvider = CommonsUtils.getUserSessionProvider();
+	      sessionProvider = CommonsUtils.getSystemSessionProvider();
 	      RepositoryService repositoryService = CommonsUtils.getService(RepositoryService.class);
 	      Session session = sessionProvider.getSession(WORKSPACE_NAME, repositoryService.getCurrentRepository());
 	      
@@ -56,17 +56,19 @@ public class CustomerService {
 	      if(baseNode.hasNode(CUSTOMER_BASE_PATH)) {
 	        customerBaseNode = baseNode.getNode(CUSTOMER_BASE_PATH);
 	      } else {
-	        customerBaseNode = baseNode.addNode(CUSTOMER_BASE_PATH, NT_BASE);    
-	        customerBaseNode.save();
+	        customerBaseNode = baseNode.addNode(CUSTOMER_BASE_PATH, NT_UNSTRUCTURED);    
 	      }
-	     
+	      session.save();
 	      Node customerNode = null;
 	      String nodeName = Text.escapeIllegalJcrChars(customerName);
-	      if(customerBaseNode.hasNode(nodeName)) {
+	      if(rootNode.hasNode(nodeName)) {
 	        customerNode = customerBaseNode.getNode(nodeName);
         } else {
+          
+          
+          
+          
           customerNode = customerBaseNode.addNode(nodeName, CUSTOMER_NODETYPE);  
-          customerNode.save();
         }
 	      customerNode.setProperty(CUSTOMER_NAME_PROP, customerName);
 	      customerNode.setProperty(CUSTOMER_ADDRESS_PROP, customerAddress);
@@ -77,22 +79,22 @@ public class CustomerService {
 	    } catch (LoginException e) {	      
 	      e.printStackTrace();
 	      if (LOG.isErrorEnabled()) {
-	        LOG.error("saveCustomer() failed because of ", e);
+	        //LOG.error("saveCustomer() failed because of ", e);
 	      }
 	    } catch (NoSuchWorkspaceException e) {
 	      e.printStackTrace();
 	      if (LOG.isErrorEnabled()) {
-	        LOG.error("saveCustomer() failed because of ", e);
+	        //LOG.error("saveCustomer() failed because of ", e);
 	      }
 	    } catch (RepositoryException e) {
 	      e.printStackTrace();
 	      if (LOG.isErrorEnabled()) {
-	        LOG.error("saveCustomer() failed because of ", e);
+	        //LOG.error("saveCustomer() failed because of ", e);
 	      }
 	    } catch (Exception e) {
 	      e.printStackTrace();
 	      if (LOG.isErrorEnabled()) {
-	        LOG.error("saveCustomer() failed because of ", e);
+	        //LOG.error("saveCustomer() failed because of ", e);
 	      }
 	    } 
 	    
